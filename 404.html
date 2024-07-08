@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function() {
+            var oldPath = window.location.pathname;
+            if (oldPath.startsWith("/blogs/")) {
+                var newPath = oldPath.replace("/blogs/", "/");
+                window.location.href = newPath;
+            } else {
+                window.location.href = "/";
+            }
+        });
+    </script>
+</head>
+<body>
+    <p>Redirecting to the new site...</p>
+</body>
+</html>
